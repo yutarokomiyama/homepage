@@ -1,0 +1,135 @@
+/*ヘッダ*/
+header {
+    padding: 10px;
+    background: #282626;
+    color: #FFF;
+}
+
+a:link {
+    color: rgb(255, 255, 255);
+    /* 未訪問リンクの色 */
+    text-decoration: none;
+    /* テキストの下線を無くす */
+}
+
+/* 訪問済みリンクのスタイルを未訪問リンクと同じに設定 */
+a:visited {
+    color: rgb(255, 255, 255);
+    /* 訪問済みリンクの色 */
+    text-decoration: none;
+    /* テキストの下線を無くす */
+}
+
+/* リンクにホバーしたときのスタイル */
+a:hover {
+    color: rgb(222, 81, 46);
+    /* ホバー時の色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+/* リンクをアクティブにしたときのスタイル */
+a:active {
+    color: rgb(222, 81, 46);
+    /* クリック時の色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+.b:link {
+    color: rgb(0, 0, 0);
+    /* 未訪問リンクの色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+/* 訪問済みリンクのスタイルを未訪問リンクと同じに設定 */
+.b:visited {
+    color: rgb(0, 0, 0);
+    /* 訪問済みリンクの色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+/* リンクにホバーしたときのスタイル */
+.b:hover {
+    color: rgb(222, 81, 46);
+    /* ホバー時の色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+/* リンクをアクティブにしたときのスタイル */
+.b:active {
+    color: rgb(222, 81, 46);
+    /* クリック時の色 */
+    text-decoration: underline;
+    /* テキストの下線を表示 */
+}
+
+/*文字の太さ*/
+.weight-100 {
+    font-weight: 100;
+}
+
+.weight-400 {
+    font-weight: 400;
+    /* normal */
+}
+
+.weight-700 {
+    font-weight: 700;
+    /* bold */
+}
+
+.weight-900 {
+    font-weight: 900;
+}
+
+/*画像の横に文字をいれる*/
+.right-float {
+    float: right;
+    margin-left: 20px;
+    /* テキストとの間に余白を設ける */
+}
+
+.text {
+    overflow: hidden;
+    /* floatの影響を受けないようにする */
+}
+
+/*ページ左右に余白*/
+.container {
+    width: 60%;
+    /* 固定幅（全体の80%） */
+    margin: 0 auto;
+    /* 自動的に左右のマージンを均等に設定 */
+}
+
+/*箇条書きのマーカー*/
+ul {
+    list-style-type: square;
+}
+
+/*文献番号*/
+ol li {
+    list-style-type: none;
+    counter-increment: cnt;
+}
+
+ol li::before {
+    content: "[" counter(cnt) "]";
+}
+
+footer {
+    /*position: fixed;*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #ccc;
+    /* 上に2pxのグレーの線を引く */
+    padding: 10px;
+    /* フッターの内側にパディングを設定 */
+    text-align: center;
+    /* フッターのテキストを中央揃えにする */
+}
