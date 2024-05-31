@@ -121,6 +121,10 @@ ol li::before {
     content: "[" counter(cnt) "]";
 }
 
+.justify {
+    text-align: justify;
+}
+
 footer {
     /*position: fixed;*/
     left: 0;
