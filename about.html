@@ -1,93 +1,137 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="ja">
-<link rel="stylesheet" type="text/css" href="./index.css">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>小宮山裕太郎のホームページ</title>
     <link rel="stylesheet" href="sample.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 64, 128, 0.85);
+            /* 白 + 半透明 */
+            color: #004080;
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6px);
+            text-align: center;
+            /* 背景ぼかし：モダンブラウザ対応 */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-float {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+        }
+
+        .text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text li {
+            margin-top: 20px;
+        }
+
+        .weight-700 {
+            font-weight: 700;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <Div Align="center">
-                    <p class="weight-700">
-                        <font size=4 face="sans-serif">
-                            <a href=" index.html">Home</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" about.html">About me</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" research.html">Research</a>&nbsp;&nbsp;&nbsp;
-                            <a
-                                href="achievement.html">Achievements</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </font>
-                        <font size=2 face="sans-serif">
-                            <a href="about_en.html">English</a>
-                        </font>
-
-                    </p>
-                </Div>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="research.html">Research</a>
+            <a href="achievement.html">Achievements</a>
+            <a href="about_en.html" style="font-size: 0.9rem;">English</a>
         </nav>
     </header>
 
     <div class="container">
         <article>
-            <br><br>
-            <img src="./image/presen.jpeg" width="200" height=auto class="right-float">
             <div class="text">
-                <font size=5 face="sans-serif">
-                    <p class="weight-700">小宮山 裕太郎 (Yutaro Komiyama)</p>
-                </font>
-                <font size=4 face="sans-serif">
-                    <ul>
-                        <li>
-                            <p class="weight-700">所属</p>
-                        </li>
-                        千葉大学大学院 情報学研究院 <br>
-                        日本学術振興会 特別研究員(PD)
+                <h2>所属</h2>
+                千葉大学大学院 情報学研究院<br>
+                日本学術振興会 特別研究員 (PD)
 
-                        <li>
-                            <p class="weight-700">メール</p>
-                        </li>
-                        y.komiyama★chiba-u.jp (★を半角アットマークに置き換えてください。)
+                <h2>連絡先</h2>
+                y.komiyama★chiba-u.jp
 
-                        <li>
-                            <p class="weight-700">略歴</p>
-                        </li>
-                        2021年3月 千葉大学 工学部 情報科学コース 卒業<br>
-                        2022年9月 千葉大学大学院 融合理工学府 数学情報科学専攻 情報科学コース 博士前期課程 修了<br>
-                        2025年3月 千葉大学大学院 融合理工学府 数学情報科学専攻 情報科学コース 博士後期課程 修了
+                <h2>略歴</h2>
+                2021年3月 千葉大学 工学部 総合工学科 情報科学コース 卒業<br>
+                2022年9月 千葉大学大学院 融合理工学府 数学情報科学専攻 情報科学コース 博士前期課程 修了<br>
+                2023年4月 日本学術振興会 特別研究員 (DC1) <br>
+                2025年3月 千葉大学大学院 融合理工学府 数学情報科学専攻 情報科学コース 博士後期課程 修了<br>
+                2025年4月 日本学術振興会 特別研究員 (PD)
 
-                        <li>
-                            <p class="weight-700">関連リンク</p>
-                        </li>
-                        <a class="b" href="https://ieeexplore.ieee.org/author/37089010440">IEEE Xplore</a><br>
-                        <a class="b" href="https://www.s-lab.nd.chiba-u.jp/index.htm">関屋・グエン研究室</a>
+                <h2>関連リンク</h2>
+                <a href="https://ieeexplore.ieee.org/author/37089010440" target="_blank">IEEE Xplore</a><br>
+                <a href="https://scholar.google.com/citations?user=MD4mA7AAAAAJ&hl=ja&oi=ao" target="_blank">Google
+                    Scholar</a><br>
+                <a href="https://www.s-lab.nd.chiba-u.jp/index.htm" target="_blank">関屋・グエン研究室</a>
 
-                        <li>
-                            <p class="weight-700">所属学会</p>
-                        </li>
-                        IEEE<br>
-                        IEEE Circuit and Systems Society<br>
-                        IEEE Power Electronics Society<br>
-                        IEEE Power Electronics Society Technical Committee on Wireless Power Transfer Systems<br>
-                        電気学会
-
-                        <li>
-                            <p class="weight-700">趣味</p>
-                        </li>
-                        マラソン、卓球、将棋など
-                </font>
+                <h2>所属学会</h2>
+                Institute of Electrical and Electronics Engineers (IEEE)<br>
+                IEEE Circuit and Systems Society (CASS)<br>
+                IEEE Power Electronics Society (PELS)<br>
+                IEEE PELS TC9 Wireless Power Transfer Systems<br>
+                電気学会
             </div>
         </article>
-
         <footer>
-            <font size=4 face="sans-serif">
-                &copy; Copyright Yutaro Komiyama. <br>No reproduction or republication without written permission.
-            </font>
+            &copy; Copyright Yutaro Komiyama.<br>
+            No reproduction or republication without written permission.
         </footer>
     </div>
+
 </body>
 
 </html>

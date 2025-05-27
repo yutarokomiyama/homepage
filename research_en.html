@@ -1,66 +1,140 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="./index.css">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yutaro Komiyama's Home Page</title>
     <link rel="stylesheet" href="sample.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 64, 128, 0.85);
+            /* 白 + 半透明 */
+            color: #004080;
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6px);
+            text-align: center;
+            /* 背景ぼかし：モダンブラウザ対応 */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-float {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+        }
+
+        .text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text li {
+            margin-top: 20px;
+        }
+
+        .weight-700 {
+            font-weight: 700;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <Div Align="center">
-                    <p class="weight-700">
-                        <font size=4 face="sans-serif">
-                            <a href=" index_en.html">Home</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" about_en.html">About me</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" research_en.html">Research</a>&nbsp;&nbsp;&nbsp;
-                            <a
-                                href=" achievement.html">Achievements</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </font>
-                        <font size=2 face="sans-serif">
-                            <a href=" research.html">日本語</a>
-                        </font>
-
-                    </p>
-                </Div>
-            </ul>
+            <a href="index_en.html">Home</a>
+            <a href="about_en.html">About me</a>
+            <a href="research_en.html">Research</a>
+            <a href="achievement.html">Achievements</a>
+            <a href="research.html" style="font-size: 0.9rem;">日本語</a>
         </nav>
     </header>
 
     <div class="container">
         <article>
-            <font size=4 face="sans-serif">
-                <ul>
-                    <li>
-                        <p class="weight-700">High-Frequency Power Electronics</p>
-                    </li>
-                    <p class="justify">
+            <h2 class="weight-700">High-Frequency Power Electronics</h2>
+            <p>
+                Most of the applications around us are powered by electricity as an energy source. Electricity is widely
+                used in modern society because it can be easily transformed in terms of amount and form, and is
+                well-suited for transmission. So, how exactly do we change the amount and form of electricity? The
+                practical field that deals with the technology of electrical power conversion is called power
+                electronics.
+            </p>
+            <p>
+                Power electronics has grown and evolved following the development of power semiconductor devices. These
+                devices are one of the key components used in power converters, and their performance significantly
+                affects the overall performance of the converter. Therefore, new power electronics technologies have
+                been developed in response to the emergence of new power semiconductor devices. In recent years,
+                high-performance power semiconductors such as Silicon Carbide (SiC) and Gallium Nitride (GaN) have
+                gained attention. These semiconductors allow operation at higher power levels and higher frequencies
+                than conventional devices.
+            </p>
+            <p>
+                My research focuses on high-frequency power electronics using power semiconductor devices such as SiC
+                and GaN. By increasing the operating frequency of power converters, passive components such as
+                capacitors and inductors can be made smaller and lighter. This enables the development of compact and
+                lightweight power converters that were previously unattainable.
+            </p>
+            <h2 class="weight-700">Keywords</h2>
+            <p>Wireless power transfer, high-frequency power electronics, machine learning, class-E power amplifier, GaN
+                device, power oscillator</p>
 
-                        &nbsp;&nbsp;Most of the applications around us are powered by 'electricity' as an energy source. Electricity is widely used in modern society because it can be easily transformed in terms of amount and form, and is well-suited for transmission. So, how exactly do we change the amount and form of electricity? The practical field that deals with the technology of electrical power conversion is called power electronics.
-<br><br>
-&nbsp;&nbsp;Power electronics has grown and evolved following the development of power semiconductor devices. Power semiconductor devices are one of the key components used in power converters, and their performance significantly affects the overall performance of the converter. 
-                        Therefore, new power electronics technologies have been developed to correspond to the emergence of new power semiconductor devices. In recent years, high-performance power semiconductors, such as Silicon Carbide (SiC) and Gallium Nitride (GaN) have gained attention. These power semiconductors allow operating at higher power levels and higher frequencies than conventional devices.
-<br><br>
-&nbsp;&nbsp;My research is about high-frequency power electronics using power semiconductor devices 
-                        such
-                        as SiC and GaN. By increasing the frequency of the power converters, passive components such as
-                        capacitors and inductors can be smaller and lighter. Therefore, unprecedented compact and
-                        lightweight power converters are expected to be realized in this research.
-                    </p>
-                </ul>
-            </font>
         </article>
-
         <footer>
-            <font size=4 face="sans-serif">
-                &copy; Copyright Yutaro Komiyama. <br>No reproduction or republication without written permission.
-            </font>
+            &copy; Copyright Yutaro Komiyama.<br>
+            No reproduction or republication without written permission.
         </footer>
     </div>
+
 </body>
 
 </html>

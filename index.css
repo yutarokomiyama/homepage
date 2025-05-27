@@ -90,6 +90,7 @@ a:active {
 .right-float {
     float: right;
     margin-left: 20px;
+    /* 縦横比を保ったまま拡大 */
     /* テキストとの間に余白を設ける */
 }
 

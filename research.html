@@ -1,60 +1,131 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="ja">
-<link rel="stylesheet" type="text/css" href="./index.css">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>小宮山裕太郎のホームページ</title>
     <link rel="stylesheet" href="sample.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 64, 128, 0.85);
+            /* 白 + 半透明 */
+            color: #004080;
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6px);
+            text-align: center;
+            /* 背景ぼかし：モダンブラウザ対応 */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-float {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+        }
+
+        .text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text li {
+            margin-top: 20px;
+        }
+
+        .weight-700 {
+            font-weight: 700;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #555;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <Div Align="center">
-                    <p class="weight-700">
-                        <font size=4 face="sans-serif">
-                            <a href=" index.html">Home</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" about.html">About me</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" research.html">Research</a>&nbsp;&nbsp;&nbsp;
-                            <a
-                                href="achievement.html">Achievements</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </font>
-                        <font size=2 face="sans-serif">
-                            <a href="research_en.html">English</a>
-                        </font>
-
-                    </p>
-                </Div>
-            </ul>
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="research.html">Research</a>
+            <a href="achievement.html">Achievements</a>
+            <a href="research_en.html" style="font-size: 0.9rem;">English</a>
         </nav>
     </header>
 
     <div class="container">
         <article>
-            <font size=4 face="sans-serif">
-                <ul>
-                    <li>
-                        <p class="weight-700">高周波パワーエレクトロニクス</p>
-                    </li>
-                    <p class="justify">
-                        &nbsp;&nbsp;私たちの身の回りの機器の多くは「電気」をエネルギー源として動いています。電気は量や形を変えることができ、伝送にも向いているため現代の社会に広く普及しています。では、実際にはどのようにして電気の量や形を変えているのでしょうか？この電気の変換に関する技術を扱う実学分野のことをパワーエレクトロニクスと呼びます。<br>
-                        &nbsp;&nbsp;これまで、パワーエレクトロニクスは「パワー半導体」の発展に追従する形で分野として成長し、進化を続けてきました。パワー半導体は電力変換器に用いられる部品のひとつであり、この部品の性能が電力変換器全体の性能を左右します。そのため、新たなパワー半導体が現れると、それに対する新たなパワーエレクトロニクス技術が開発されます。近年では、シリコンカーバイド
-                        (SiC) やガリウムナイトライド (GaN)
-                        という材料を用いた高性能なパワー半導体が注目されています。これらのパワー半導体は、これまでのデバイスよりも高い電力・高い周波数での動作が可能です。<br>
-                        &nbsp;&nbsp;私はSiCやGaNなどのパワー半導体を用いた、高周波パワーエレクトロニクスの研究をしています。電力変換回路の周波数を高くすることで、コンデンサやインダクタなどの受動部品を小型軽量化できます。そのため、これまでにない小型軽量な電力変換回路を実現することが期待されます。
-                    </p>
-                </ul>
-            </font>
-        </article>
+            <h2 class="weight-700">高周波パワーエレクトロニクス</h2>
+            <p>
+                私たちの身の回りの機器の多くは「電気」をエネルギー源として動いています。電気は量や形を変えることができ、伝送にも向いているため現代の社会に広く普及しています。では、実際にはどのようにして電気の量や形を変えているのでしょうか？
+                この電気の変換に関する技術を扱う実学分野のことをパワーエレクトロニクスと呼びます。
+            </p>
+            <p>
+                これまで、パワーエレクトロニクスは「パワー半導体」の発展に追従する形で分野として成長し、進化を続けてきました。パワー半導体は電力変換器に用いられる部品のひとつであり、この部品の性能が電力変換器全体の性能を左右します。そのため、新たなパワー半導体が現れると、それに対する新たなパワーエレクトロニクス技術が開発されます。
+            </p>
+            <p>
+                近年では、シリコンカーバイド (SiC) やガリウムナイトライド (GaN)
+                という材料を用いた高性能なパワー半導体が注目されています。これらのパワー半導体は、これまでのデバイスよりも高い電力・高い周波数での動作が可能です。
+            </p>
+            <p>
+                私はSiCやGaNなどのパワー半導体を用いた、高周波パワーエレクトロニクスの研究をしています。電力変換回路の周波数を高くすることで、コンデンサやインダクタなどの受動部品を小型軽量化できます。そのため、これまでにない小型軽量な電力変換回路を実現することが期待されます。
+            </p>
 
+            <h2 class="weight-700">キーワード</h2>
+            <p>無線電力伝送、高周波パワーエレクトロニクス、機械学習、E級増幅器、GaNデバイス、電力発振器</p>
+        </article>
         <footer>
-            <font size=4 face="sans-serif">
-                &copy; Copyright Yutaro Komiyama. <br>No reproduction or republication without written permission.
-            </font>
+            &copy; Copyright Yutaro Komiyama.<br>
+            No reproduction or republication without written permission.
         </footer>
     </div>
+
 </body>
 
 </html>

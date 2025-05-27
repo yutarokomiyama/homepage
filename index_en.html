@@ -1,62 +1,173 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" type="text/css" href="./index.css">
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Yutaro Komiyama's Home Page</title>
     <link rel="stylesheet" href="sample.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: rgba(0, 64, 128, 0.85);
+            /* 白 + 半透明 */
+            color: #004080;
+            z-index: 1000;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(6px);
+            text-align: center;
+            /* 背景ぼかし：モダンブラウザ対応 */
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .right-float {
+            float: right;
+            margin: 0 0 15px 20px;
+            border-radius: 8px;
+            width: 200px;
+            height: auto;
+        }
+
+        .text ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .text li {
+            margin-top: 20px;
+        }
+
+        .weight-700 {
+            font-weight: 700;
+        }
+
+        .justify {
+            text-align: justify;
+        }
+
+        .profile-section {
+            display: flex;
+            justify-content: center;
+            padding: 60px 20px;
+            background-color: #ffffff;
+        }
+
+        .profile-container {
+            display: flex;
+            flex-direction: row-reverse;
+            /* ★ 写真を左、テキストを右に */
+            max-width: 1000px;
+            width: 100%;
+            align-items: flex-start;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 200px;
+            height: auto;
+            border-radius: 12px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        .profile-text .affiliation {
+            font-size: 1.5rem;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 1.5;
+        }
+
+        .profile-text .bio {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.7;
+            text-align: justify;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <nav>
-            <ul>
-                <Div Align="center">
-                    <p class="weight-700">
-                        <font size=4 face="sans-serif">
-                            <a href=" index_en.html">Home</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" about_en.html">About me</a>&nbsp;&nbsp;&nbsp;
-                            <a href=" research_en.html">Research</a>&nbsp;&nbsp;&nbsp;
-                            <a
-                                href=" achievement.html">Achievements</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        </font>
-                        <font size=2 face="sans-serif">
-                            <a href=" index.html">日本語</a>
-                        </font>
-
-                    </p>
-                </Div>
-            </ul>
+            <a href="index_en.html">Home</a>
+            <a href="about_en.html">About me</a>
+            <a href="research_en.html">Research</a>
+            <a href="achievement.html">Achievements</a>
+            <a href="index.html" style="font-size: 0.9em;">日本語</a>
         </nav>
     </header>
 
     <div class="container">
         <article>
-            <font size=4 face="sans-serif"><br>
-                <img src="./image/me.JPG" width="200" height=auto class="right-float">
-                <div class="text">
-                    <ul>
-                        <li>
-                            <p class="weight-700">About this homepage</p>
-                        </li>
-                        &nbsp;&nbsp;Welcome to Yutaro Komiyama's homepage. I am working as a Japan Society for Promotion of Science (JSPS) research fellow at Chiba
-                        University in Japan. If you are interested in me or my works, please feel free to contact me.
-                        <br><br>
-                        <li>
-                            <p class="weight-700">Update log</p>
-                        </li>
-                        &nbsp;&nbsp;2024/5/30 Homepage open<br>
-                        &nbsp;&nbsp;2025/3/24 Homepage update
-                    </ul><br><br>
+            <section class="profile-section">
+                <div class="profile-container">
+                    <img src="./image/me.JPG" alt="プロフィール写真" class="profile-photo">
+                    <div class="profile-text">
+                        <h1>Yutaro Komiyama, Ph.D.</h1>
+                        <h1>小宮山 裕太郎</h1>
+                        <p>Postdoctoral Researcher<br>
+                            Graduate School of Informatics, Chiba University</p>
+                        <p class="bio">
+                            I am a researcher in the field of high-frequency power electronics. My current work focuses
+                            on developing compact and efficient power converters using GaN and SiC devices. I am
+                            particularly interested in wireless power transfer, resonant converters, and ML-based
+                            circuit designs. I received my Ph.D. in Engineering from Chiba University, Japan, in March
+                            2025.
+                        </p>
+                    </div>
                 </div>
-            </font>
+            </section>
         </article>
 
         <footer>
-            <font size=4 face="sans-serif">
-                &copy; Copyright Yutaro Komiyama. <br>No reproduction or republication without written permission.
-            </font>
+            &copy; Copyright Yutaro Komiyama.<br>
+            No reproduction or republication without written permission.
         </footer>
     </div>
 </body>
