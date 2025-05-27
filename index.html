@@ -129,6 +129,49 @@
             font-size: 14px;
             color: #555;
         }
+
+         @media screen and (max-width: 768px) {
+            .container {
+                margin: 100px 10px 30px 10px;
+                /* ヘッダー分の余白追加＋左右余白縮小 */
+                padding: 15px;
+            }
+
+            .profile-container {
+                flex-direction: column;
+                /* スマホでは縦並びに */
+                align-items: center;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                /* 少し小さめに */
+                margin-bottom: 20px;
+            }
+
+            .profile-text h1 {
+                font-size: 1.5rem;
+            }
+
+            .profile-text .affiliation {
+                font-size: 1.1rem;
+            }
+
+            .profile-text .bio {
+                font-size: 1rem;
+                text-align: justify;
+            }
+
+            header {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+        }
     </style>
 
     <!-- Google tag (gtag.js) -->
